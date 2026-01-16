@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Asheesh Sarkar | Official Website</title>
-<meta name="description" content="Asheesh Sarkar – Personal website, portfolio, media & contact.">
-<meta name="keywords" content="Asheesh Sarkar, Web Developer, Designer, Portfolio">
+
+<meta name="description" content="Asheesh Sarkar – Personal Website, Media, Portfolio & Contact">
+<meta name="keywords" content="Asheesh Sarkar, Portfolio, Media, Personal Website">
 
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -14,87 +14,83 @@
 
 <body>
 
-<!-- WhatsApp Floating Button -->
+<!-- WhatsApp -->
 <a class="whatsapp" href="https://wa.me/916395463738" target="_blank">💬</a>
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-content">
-    <h1>ASHEESH SARKAR</h1>
-    <p>Web Developer & Designer</p>
-    <div class="buttons">
-      <a href="#portfolio">View Work</a>
-      <a href="#contact" class="outline">Contact</a>
-    </div>
+  <h1>ASHEESH SARKAR</h1>
+  <p>Creator • Designer • Developer</p>
+  <div class="buttons">
+    <a href="#media">Media</a>
+    <a href="#contact" class="outline">Contact</a>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="about" id="about">
+<section id="about">
+  <h2>About Me</h2>
   <div class="about-box">
-    <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Asheesh Sarkar">
-    <div>
-      <h2>About Me</h2>
-      <p>
-        I design and develop premium websites with a strong focus on
-        elegance, performance and modern branding.  
-        My goal is to create digital experiences that leave impact.
-      </p>
-    </div>
+    <img src="https://i.imgur.com/8Km9tLL.jpg">
+    <p>
+      I build premium digital experiences.  
+      This website is my personal space where I store my work,
+      creativity, memories and professional projects.
+    </p>
   </div>
 </section>
 
 <!-- MEDIA -->
-<section class="media" id="media">
-  <h2>Media</h2>
-  <div class="grid">
-    <div class="card">🎬 Videos</div>
-    <div class="card">🖼 Photos</div>
-    <div class="card">🎧 Music</div>
+<section id="media">
+  <h2>Media Gallery</h2>
+  <div class="grid" id="gallery">
+    <!-- Firebase images/videos will load here -->
   </div>
 </section>
 
 <!-- PORTFOLIO -->
-<section class="portfolio" id="portfolio">
+<section id="portfolio">
   <h2>Portfolio</h2>
   <div class="grid">
-    <div class="card">Project One</div>
-    <div class="card">Project Two</div>
-    <div class="card">Project Three</div>
+    <div class="card">Project 1</div>
+    <div class="card">Project 2</div>
+    <div class="card">Project 3</div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="services">
+<section>
   <h2>Services</h2>
   <div class="grid">
     <div class="card">Website Design</div>
     <div class="card">Web Development</div>
-    <div class="card">UI / UX Design</div>
     <div class="card">Branding</div>
+    <div class="card">UI/UX</div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact" id="contact">
+<section id="contact">
   <h2>Contact Me</h2>
 
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Message"></textarea>
-    <button type="submit">Send Message</button>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <textarea id="message" placeholder="Message"></textarea>
+    <button type="submit">Send</button>
   </form>
 
   <p>Email: asheeshsarkar0@gmail.com</p>
-  <p>Phone: +91 63954 63738</p>
   <p>India</p>
 </section>
 
 <footer>
-  © 2026 Asheesh Sarkar • All Rights Reserved
+© 2026 Asheesh Sarkar • All Rights Reserved
 </footer>
 
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="firebase.js"></script>
 <script src="script.js"></script>
 </body>
-  </html>
+</html>

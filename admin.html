@@ -1,39 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Panel - Asheesh Sarkar</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<html>
+<body style="background:#000;color:#fff;text-align:center">
 
-<body>
-
-<section class="hero">
-  <h1>ADMIN PANEL</h1>
-  <p>Asheesh Sarkar</p>
-</section>
-
-<section>
-  <h2>Login</h2>
-  <input type="password" id="adminPass" placeholder="Admin Password">
-  <button onclick="login()">Login</button>
-</section>
-
-<section id="panel" style="display:none;">
-  <h2>Upload to Gallery</h2>
-
-  <input type="text" id="mediaUrl" placeholder="Image / Video URL">
-  <select id="mediaType">
-    <option value="image">Image</option>
-    <option value="video">Video</option>
-  </select>
-  <button onclick="uploadMedia()">Upload</button>
-</section>
+<h2>Admin Upload</h2>
+<input type="file" id="file">
+<select id="type">
+<option value="image">Image</option>
+<option value="audio">MP3</option>
+<option value="video">Video</option>
+</select>
+<button onclick="upload()">Upload</button>
 
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 <script src="firebase.js"></script>
 <script src="admin.js"></script>
+
 </body>
 </html>

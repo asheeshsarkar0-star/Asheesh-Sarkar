@@ -5,29 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Asheesh Sarkar | Official Website</title>
-<meta name="description" content="Asheesh Sarkar – Media, Portfolio, Music, Videos">
-<meta name="keywords" content="Asheesh Sarkar, Music, Video, Portfolio">
 
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_000000002838720991e526443484273a.png">
+<meta name="description" content="Asheesh Sarkar – Official Portfolio & Media Website">
+<meta name="keywords" content="Asheesh Sarkar, Portfolio, Media, Website">
+
+<link rel="icon" type="image/png"
+href="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_000000002838720991e526443484273a.png">
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/916395463738" target="_blank">💬</a>
-
 <!-- HEADER -->
 <header class="header">
   <div class="brand">
-    <img class="logo-icon" src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_000000007e747206a543b7d7d8770c41.png">
-    <img class="logo-text" src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_0000000028687209a6f6af3cd7170ed6.png">
+    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_000000007e747206a543b7d7d8770c41.png" class="logo-icon">
+    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_0000000028687209a6f6af3cd7170ed6.png" class="logo-text">
   </div>
 
   <nav class="nav">
     <a href="#media">Media</a>
-    <a href="#portfolio">Portfolio</a>
+    <a href="#portfolio">Work</a>
+    <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -38,46 +38,72 @@
 <div class="mobile-menu" id="mobileMenu">
   <span onclick="closeMenu()">✕</span>
   <a href="#media" onclick="closeMenu()">Media</a>
-  <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+  <a href="#portfolio" onclick="closeMenu()">Work</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
 
 <!-- HERO -->
 <section class="hero">
-  <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_00000000a5dc72068ccf64c818b36983.png">
+  <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_00000000a5dc72068ccf64c818b36983.png" class="hero-img">
 </section>
 
 <!-- MEDIA -->
 <section id="media">
   <h2>Media Gallery</h2>
-  <div class="grid" id="gallery"></div>
+  <div class="grid">
+    <div class="media-card" onclick="openItem('Image')">Image</div>
+    <div class="media-card" onclick="openItem('Video')">Video</div>
+    <div class="media-card" onclick="openItem('MP3')">MP3</div>
+  </div>
 </section>
 
 <!-- PORTFOLIO -->
 <section id="portfolio">
-  <h2>My Work</h2>
+  <h2>Portfolio</h2>
   <div class="grid">
-    <div class="card">Website Project</div>
-    <div class="card">Music Project</div>
-    <div class="card">Video Project</div>
+    <div class="card" onclick="openItem('Website Project')">Website Project</div>
+    <div class="card" onclick="openItem('Music Project')">Music Project</div>
+    <div class="card" onclick="openItem('Video Project')">Video Project</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card">Website Design</div>
+    <div class="card">Web Development</div>
+    <div class="card">Branding</div>
+    <div class="card">UI / UX</div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: asheeshsarkar0@gmail.com</p>
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <form onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p class="contact-info">
+    📧 asheeshsarkar0@gmail.com<br>
+    📍 India
+  </p>
 </section>
 
-<footer>
-© 2026 Asheesh Sarkar
+<!-- FOOTER -->
+<footer class="footer">
+  <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_000000007e747206a543b7d7d8770c41.png">
+  <p>© 2026 Asheesh Sarkar. All Rights Reserved.</p>
 </footer>
 
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-<script src="firebase.js"></script>
-<script src="script.js"></script>
+<!-- WHATSAPP -->
+<a href="https://wa.me/916395463738" target="_blank" class="whatsapp">💬</a>
 
+<script src="script.js"></script>
 </body>
-</html>
+    </html>

@@ -240,10 +240,18 @@ h2{
   background:#000;
 }
 
-.big-banner img{
-  width:100%;
-  height:auto;
-  display:block;
-  border-top:1px solid #222;
-  border-bottom:1px solid #222;
+/* BIG BOTTOM BANNER FIX */
+.big-banner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto 30px;
+  border-radius: 14px;
+  overflow: hidden;
 }
+
+.big-banner img {
+  width: 100%;
+  height: 220px;   /* 🔥 yahin control hota hai */
+  object-fit: cover;
+  display: block;
+                             }

@@ -7,8 +7,8 @@
 
 <link rel="icon" href="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000002838720991e526443484273a.png">
 <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
 
 <!-- HEADER -->
@@ -19,6 +19,7 @@
   </div>
 
   <nav class="nav">
+    <a href="#about">About</a>
     <a href="#media">Media</a>
     <a href="#portfolio">Work</a>
     <a href="#services">Services</a>
@@ -31,6 +32,7 @@
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <span onclick="closeMenu()">✕</span>
+  <a href="#about" onclick="closeMenu()">About</a>
   <a href="#media" onclick="closeMenu()">Media</a>
   <a href="#portfolio" onclick="closeMenu()">Work</a>
   <a href="#services" onclick="closeMenu()">Services</a>
@@ -42,17 +44,36 @@
   <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png">
 </section>
 
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+
+  <div class="about-box">
+    <div class="about-text">
+      <h3>Asheesh Sarkar</h3>
+      <p>
+        I am a creative web designer & developer passionate about building
+        premium digital experiences.
+        This website is my personal space where I showcase my work, music,
+        media and creative journey.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png">
+    </div>
+  </div>
+</section>
+
 <!-- MEDIA -->
 <section id="media">
   <h2>Media Gallery</h2>
 
   <div class="grid gallery">
-
     <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png" onclick="openImg(this.src)">
     <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000004b3872098289629d0dc03285.png" onclick="openImg(this.src)">
     <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000007e747206a543b7d7d8770c41.png" onclick="openImg(this.src)">
     <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_0000000028687209a6f6af3cd7170ed6.png" onclick="openImg(this.src)">
-
   </div>
 </section>
 
@@ -60,9 +81,9 @@
 <section id="portfolio">
   <h2>Portfolio</h2>
   <div class="grid">
-    <div class="card">Website Projects</div>
-    <div class="card">Music Projects</div>
-    <div class="card">Video Projects</div>
+    <div class="card">Personal Portfolio Website</div>
+    <div class="card">Music Artist Website</div>
+    <div class="card">Business Website</div>
   </div>
 </section>
 

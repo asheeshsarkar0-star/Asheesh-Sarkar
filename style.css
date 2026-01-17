@@ -1,121 +1,236 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:#000;color:#fff}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background:#000;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* ================= HEADER ================= */
 
 .header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 30px;
-border-bottom:1px solid #222;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  border-bottom:1px solid #1f1f1f;
+  position:sticky;
+  top:0;
+  background:#000;
+  z-index:1000;
 }
 
-.header img{height:40px}
-
-.header nav a{
-color:#d4af37;
-margin:0 12px;
-text-decoration:none;
-font-size:15px;
+.brand img{
+  height:38px;
 }
 
-section{padding:70px 8%;text-align:center}
-
-h2{color:#d4af37;margin-bottom:25px}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:22px;
+.nav a{
+  color:#d4af37;
+  margin:0 14px;
+  text-decoration:none;
+  font-size:15px;
 }
 
-.grid img{
-width:100%;
-border-radius:12px;
-border:1px solid #d4af37;
+.nav a:hover{
+  color:#fff;
 }
 
-.card{
-padding:28px;
-border:1px solid #d4af37;
-border-radius:12px;
-transition:.3s;
-}
-.card:hover{transform:translateY(-6px)}
+/* ================= HERO ================= */
 
-.about-row{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:60px;
+.hero img{
+  width:100%;
+  display:block;
+}
+
+/* ================= ABOUT PREMIUM ================= */
+
+.about-premium{
+  padding:80px 20px;
+}
+
+.about-wrap{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  gap:60px;
 }
 
 .about-face img{
-width:300px;
-border-radius:18px;
-box-shadow:0 0 35px rgba(212,175,55,.45);
+  width:420px;
+  border-radius:18px;
+  box-shadow:0 0 40px rgba(212,175,55,0.35);
 }
 
-.about-content{
-max-width:500px;
-text-align:left;
+.about-text h2{
+  color:#d4af37;
+  font-size:34px;
+  margin-bottom:20px;
+  letter-spacing:2px;
 }
 
-.about-content h3{margin-bottom:12px}
-.about-content p{color:#ccc;line-height:1.8}
+.about-text p{
+  color:#ddd;
+  font-size:17px;
+  line-height:1.8;
+  max-width:520px;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+  padding:70px 20px;
+  text-align:center;
+}
+
+h2{
+  color:#d4af37;
+  margin-bottom:30px;
+  font-size:26px;
+}
+
+/* ================= GRID ================= */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* ================= MEDIA ================= */
+
+.gallery img{
+  width:100%;
+  border-radius:15px;
+  border:1px solid #d4af37;
+  transition:.35s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+}
+
+/* ================= CARDS ================= */
+
+.card{
+  padding:28px;
+  border-radius:14px;
+  border:1px solid rgba(212,175,55,0.5);
+  color:#fff;
+  transition:.3s;
+  background:linear-gradient(145deg,#0a0a0a,#000);
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 25px rgba(212,175,55,0.25);
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+  max-width:700px;
+  margin:auto;
+}
 
 .contact input,
 .contact textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-background:#111;
-border:1px solid #d4af37;
-color:#fff;
-border-radius:8px;
+  width:100%;
+  padding:14px;
+  margin:12px 0;
+  background:#0b0b0b;
+  border:1px solid #d4af37;
+  color:#fff;
+  border-radius:8px;
+}
+
+.contact textarea{
+  height:130px;
 }
 
 .contact button{
-background:#d4af37;
-border:none;
-padding:12px 35px;
-border-radius:25px;
-margin-top:10px;
-cursor:pointer;
+  margin-top:10px;
+  padding:12px 40px;
+  background:#d4af37;
+  border:none;
+  border-radius:25px;
+  font-weight:600;
+  cursor:pointer;
 }
 
-.big-banner img{
-width:100%;
-margin-top:40px;
+.contact button:hover{
+  background:#fff;
 }
 
-footer{
-text-align:center;
-padding:40px;
-border-top:1px solid #222;
-color:#777;
+/* ================= FOOTER ================= */
+
+.footer{
+  text-align:center;
+  padding:40px 20px;
+  border-top:1px solid #222;
+  margin-top:40px;
 }
 
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-width:55px;
-height:55px;
-background:#25d366;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-box-shadow:0 0 25px rgba(37,211,102,.6);
-z-index:9999;
+.footer img{
+  width:55px;
+  margin-bottom:10px;
 }
 
-.whatsapp img{
-width:28px;
-filter:invert(1);
+/* ================= WHATSAPP FLOAT ================= */
+
+.whatsapp-float{
+  position:fixed;
+  bottom:22px;
+  right:22px;
+  width:58px;
+  height:58px;
+  background:#25d366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 0 0 rgba(37,211,102,0.6);
+  animation:pulse 1.5s infinite;
+  z-index:9999;
 }
+
+.whatsapp-float img{
+  width:30px;
+  filter:brightness(0) invert(1);
+}
+
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(37,211,102,.6);}
+  70%{box-shadow:0 0 0 18px rgba(37,211,102,0);}
+  100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
+}
+
+/* ================= MOBILE ================= */
 
 @media(max-width:900px){
-.about-row{flex-direction:column;text-align:center}
-.about-content{text-align:center}
+
+  .about-wrap{
+    flex-direction:column;
+    text-align:center;
   }
+
+  .about-face img{
+    width:90%;
+  }
+
+  .about-text p{
+    max-width:100%;
+  }
+
+  .nav{
+    display:none;
+  }
+
+}

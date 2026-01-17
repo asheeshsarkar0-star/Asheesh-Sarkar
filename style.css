@@ -1,3 +1,6 @@
+:root{
+  --vh: 1vh;
+}
 *{
   margin:0;
   padding:0;

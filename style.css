@@ -136,38 +136,58 @@ h2{
 /* ================= CONTACT ================= */
 
 .contact{
-  max-width:700px;
-  margin:auto;
+/* ================= CONTACT FINAL FIX ================= */
+
+.contact-section{
+  width:100%;
+  padding:90px 20px;
+  display:flex;
+  justify-content:center;
 }
 
-.contact input,
-.contact textarea{
+.contact-section form{
   width:100%;
-  padding:14px;
-  margin:12px 0;
+  max-width:900px;
+}
+
+.contact-section input,
+.contact-section textarea{
+  width:100%;
+  padding:15px;
+  margin:14px 0;
   background:#0b0b0b;
   border:1px solid #d4af37;
   color:#fff;
-  border-radius:8px;
+  border-radius:10px;
+  font-size:15px;
 }
 
-.contact textarea{
-  height:130px;
+.contact-section textarea{
+  height:150px;
+  resize:none;
 }
 
-.contact button{
-  margin-top:10px;
-  padding:12px 40px;
+.contact-section button{
+  display:block;
+  margin:18px auto 10px;
+  padding:12px 45px;
   background:#d4af37;
   border:none;
-  border-radius:25px;
+  border-radius:30px;
   font-weight:600;
   cursor:pointer;
 }
 
-.contact button:hover{
+.contact-section button:hover{
   background:#fff;
 }
+
+.contact-section p{
+  text-align:center;
+  margin-top:15px;
+  color:#aaa;
+  font-size:14px;
+  }
 
 /* ================= FOOTER ================= */
 

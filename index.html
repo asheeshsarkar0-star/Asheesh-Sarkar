@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Asheesh Sarkar | Official Website</title>
 
 <link rel="icon" href="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000002838720991e526443484273a.png">
@@ -16,41 +15,34 @@
 <header class="header">
   <div class="brand">
     <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000007e747206a543b7d7d8770c41.png">
-    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_0000000028687209a6f6af3cd7170ed6.png">
   </div>
 
   <nav class="nav">
+    <a href="#about">About</a>
     <a href="#media">Media</a>
     <a href="#portfolio">Work</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </nav>
-
-  <div class="menu-btn" onclick="openMenu()">☰</div>
 </header>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <span onclick="closeMenu()">✕</span>
-  <a href="#media" onclick="closeMenu()">Media</a>
-  <a href="#portfolio" onclick="closeMenu()">Work</a>
-  <a href="#services" onclick="closeMenu()">Services</a>
-  <a href="#contact" onclick="closeMenu()">Contact</a>
-</div>
+<!-- FACE + ABOUT -->
+<section class="about-face" id="about">
 
-<!-- HERO + ABOUT -->
-<section class="hero-about">
-  <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png">
+  <div class="about-left">
+    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png">
+  </div>
 
-  <div class="about-box">
+  <div class="about-right">
     <h2>About Me</h2>
+    <h3>Asheesh Sarkar</h3>
     <p>
       I am a creative web designer & developer passionate about building
-      premium digital experiences.  
-      This website is my personal space where I showcase my work,
-      media and creative journey.
+      premium digital experiences. This website is my personal branding
+      space where I showcase my work, media and creative journey.
     </p>
   </div>
+
 </section>
 
 <!-- MEDIA -->
@@ -90,35 +82,30 @@
   <h2>Contact Me</h2>
 
   <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+    <button>Send Message</button>
   </form>
 
   <p>Email: asheeshsarkar0@gmail.com</p>
   <p>India</p>
 </section>
 
-<!-- LAST BRAND BANNER -->
-<section class="end-banner">
-  <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000004b3872098289629d0dc03285.png">
+<!-- BIG NAME BANNER -->
+<section class="big-banner">
+  <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000007e747206a543b7d7d8770c41.png">
 </section>
 
 <!-- FOOTER -->
-<footer>
+<footer class="footer">
   © 2026 Asheesh Sarkar • All Rights Reserved
 </footer>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/916395463738" class="whatsapp" target="_blank">
+<a href="https://wa.me/916395463738" class="whatsapp-float" target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
 
-<script>
-function openMenu(){document.getElementById("mobileMenu").style.right="0";}
-function closeMenu(){document.getElementById("mobileMenu").style.right="-100%";}
-</script>
-
 </body>
-      </html>
+    </html>

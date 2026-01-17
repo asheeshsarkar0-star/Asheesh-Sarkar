@@ -35,9 +35,9 @@ body{
 
 /* HERO */
 .hero{
-  height:calc(100vh - 70px);
-  background:url("https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png")
-  center/contain no-repeat;
+  height: calc(var(--vh) * 100 - 70px);
+  background: url("https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png")
+  center / contain no-repeat;
 }
 
 /* SECTION */

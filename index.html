@@ -30,7 +30,7 @@
   </nav>
 </header>
 
-<!-- HERO -->
+<!-- BANNER -->
 <section class="hero">
   <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000004b3872098289629d0dc03285.png">
 </section>
@@ -41,7 +41,7 @@
 </section>
 
 <!-- MEDIA -->
-<section id="media" class="section-tight">
+<section id="media" class="section">
   <h2>Media Gallery</h2>
 
   <div class="media-grid">
@@ -51,7 +51,7 @@
 </section>
 
 <!-- PORTFOLIO -->
-<section id="portfolio" class="section-tight">
+<section id="portfolio" class="section">
   <h2>Portfolio</h2>
   <div class="grid">
     <div class="card">Artist Website</div>
@@ -61,7 +61,7 @@
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="section-tight">
+<section id="services" class="section">
   <h2>Services</h2>
   <div class="grid">
     <div class="card">Web Design</div>
@@ -72,8 +72,9 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact-section section-tight">
+<section id="contact" class="section contact">
   <h2>Contact</h2>
+
   <form onsubmit="sendMessage(event)">
     <input type="text" placeholder="Your Name" required>
     <input type="email" placeholder="Your Email" required>
@@ -97,6 +98,12 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png">
 </a>
 
-<script src="script.js"></script>
+<script>
+function sendMessage(e){
+  e.preventDefault();
+  alert("Message sent successfully!");
+}
+</script>
+
 </body>
-      </html>
+</html>

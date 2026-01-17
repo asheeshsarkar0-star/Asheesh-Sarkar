@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Asheesh Sarkar | Official Website</title>
 
-<link rel="icon" href="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_000000002838720991e526443484273a.png">
+<link rel="icon" href="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000002838720991e526443484273a.png">
 <link rel="stylesheet" href="style.css">
-</head>
 
+</head>
 <body>
 
 <!-- HEADER -->
 <header class="header">
   <div class="brand">
-    <img class="logo-icon" src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_000000007e747206a543b7d7d8770c41.png">
-    <img class="logo-text" src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_0000000028687209a6f6af3cd7170ed6.png">
+    <img class="logo-icon" src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000007e747206a543b7d7d8770c41.png">
+    <img class="logo-text" src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_0000000028687209a6f6af3cd7170ed6.png">
   </div>
 
   <nav class="nav">
@@ -39,27 +39,30 @@
 
 <!-- HERO -->
 <section class="hero">
-  <img class="hero-img"
-  src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_00000000a5dc72068ccf64c818b36983.png">
+  <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png">
 </section>
 
 <!-- MEDIA -->
 <section id="media">
   <h2>Media Gallery</h2>
-  <div class="grid" id="gallery"></div>
-  <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png">
-<img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000004b3872098289629d0dc03285.png">
-<img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000007e747206a543b7d7d8770c41.png">
-<img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_0000000028687209a6f6af3cd7170ed6.png">
+
+  <div class="grid gallery">
+
+    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png" onclick="openImg(this.src)">
+    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000004b3872098289629d0dc03285.png" onclick="openImg(this.src)">
+    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000007e747206a543b7d7d8770c41.png" onclick="openImg(this.src)">
+    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_0000000028687209a6f6af3cd7170ed6.png" onclick="openImg(this.src)">
+
+  </div>
 </section>
 
 <!-- PORTFOLIO -->
 <section id="portfolio">
   <h2>Portfolio</h2>
   <div class="grid">
-    <div class="card" onclick="alert('Website Project')">Website Project</div>
-    <div class="card" onclick="alert('Music Project')">Music Project</div>
-    <div class="card" onclick="alert('Video Project')">Video Project</div>
+    <div class="card">Website Projects</div>
+    <div class="card">Music Projects</div>
+    <div class="card">Video Projects</div>
   </div>
 </section>
 
@@ -85,27 +88,25 @@
     <button type="submit">Send Message</button>
   </form>
 
-  <p class="contact-info">
-    📧 asheeshsarkar0@gmail.com <br>
-    📍 India
-  </p>
+  <p>Email: asheeshsarkar0@gmail.com</p>
+  <p>India</p>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/refs/heads/main/file_000000007e747206a543b7d7d8770c41.png">
-  <p>© 2026 Asheesh Sarkar. All Rights Reserved.</p>
+  <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000007e747206a543b7d7d8770c41.png">
+  <p>© 2026 Asheesh Sarkar • All Rights Reserved</p>
 </footer>
+
+<!-- IMAGE VIEWER -->
+<div class="viewer" id="viewer" onclick="closeImg()">
+  <img id="viewerImg">
+</div>
 
 <!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/916395463738" target="_blank">💬</a>
 
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-
-<script src="firebase.js"></script>
 <script src="script.js"></script>
 
 </body>
-</html>
+  </html>

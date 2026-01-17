@@ -27,9 +27,13 @@ body{
   text-decoration:none;
 }
 
-/* MOBILE MENU */
-.menu-btn{display:none;font-size:26px;color:#d4af37}
+.menu-btn{
+  display:none;
+  font-size:26px;
+  color:#d4af37;
+}
 
+/* MOBILE MENU */
 .mobile-menu{
   position:fixed;
   top:0;
@@ -37,10 +41,10 @@ body{
   width:100%;
   height:100%;
   background:#000;
+  z-index:999;
   padding:40px;
   text-align:center;
   transition:.4s;
-  z-index:999;
 }
 
 .mobile-menu a{
@@ -70,7 +74,7 @@ body{
 }
 
 section{
-  padding:45px 20px;
+  padding:50px 20px;
   text-align:center;
 }
 
@@ -92,7 +96,7 @@ h2{
   border:1px solid #d4af37;
 }
 
-/* GRID */
+/* CARDS */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -100,9 +104,29 @@ h2{
 }
 
 .card{
-  padding:30px;
   border:1px solid #d4af37;
+  padding:30px;
   border-radius:15px;
+}
+
+/* CONTACT */
+.contact input,
+.contact textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  background:#111;
+  border:1px solid #d4af37;
+  color:#fff;
+  border-radius:8px;
+}
+
+.contact button{
+  padding:12px 30px;
+  background:#d4af37;
+  border:none;
+  border-radius:25px;
+  margin-top:10px;
 }
 
 /* FOOTER */
@@ -112,7 +136,10 @@ h2{
   border-top:1px solid #222;
 }
 
-.footer img{width:50px;margin-bottom:10px}
+.footer img{
+  width:50px;
+  margin-bottom:10px;
+}
 
 /* WHATSAPP */
 .whatsapp-float{
@@ -145,4 +172,4 @@ h2{
 @media(max-width:768px){
   .nav{display:none}
   .menu-btn{display:block}
-}
+  }

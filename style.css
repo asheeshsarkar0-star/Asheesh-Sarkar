@@ -1,7 +1,6 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#000;color:#fff;font-family:Arial;overflow-x:hidden}
 
-/* HEADER */
 .header{
   position:fixed;
   top:0;
@@ -12,27 +11,21 @@ body{background:#000;color:#fff;font-family:Arial;overflow-x:hidden}
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:0 40px;
+  padding:0 35px;
   z-index:1000;
 }
 
 .logo-icon{width:50px}
-.logo-text{height:36px}
+.logo-text{height:38px}
 
 .nav a{
   color:#d4af37;
-  margin-left:25px;
   text-decoration:none;
+  margin-left:25px;
 }
 
-.menu-btn{
-  display:none;
-  font-size:28px;
-  color:#d4af37;
-  cursor:pointer;
-}
+.menu-btn{display:none;font-size:28px;color:#d4af37}
 
-/* MOBILE MENU */
 .mobile-menu{
   position:fixed;
   inset:0;
@@ -61,32 +54,28 @@ body{background:#000;color:#fff;font-family:Arial;overflow-x:hidden}
   color:#d4af37;
 }
 
-/* HERO */
 .hero{margin-top:90px}
 .hero-img{width:100%;display:block}
 
-/* SECTIONS */
 section{padding:70px 8%;text-align:center}
 h2{color:#d4af37;margin-bottom:30px}
 
-/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:20px;
 }
 
-.card,.media-card{
+.card{
   border:1px solid #d4af37;
   padding:35px;
   border-radius:14px;
   cursor:pointer;
 }
 
-/* CONTACT */
 .contact form{
   max-width:500px;
-  margin:0 auto;
+  margin:auto;
   display:flex;
   flex-direction:column;
   gap:15px;
@@ -109,9 +98,6 @@ h2{color:#d4af37;margin-bottom:30px}
   font-weight:bold;
 }
 
-.contact-info{margin-top:25px;color:#aaa}
-
-/* FOOTER */
 .footer{
   border-top:1px solid #222;
   padding:40px;
@@ -121,7 +107,6 @@ h2{color:#d4af37;margin-bottom:30px}
 
 .footer img{width:45px;margin-bottom:10px}
 
-/* WHATSAPP */
 .whatsapp{
   position:fixed;
   right:20px;
@@ -139,9 +124,7 @@ h2{color:#d4af37;margin-bottom:30px}
   z-index:3000;
 }
 
-/* MOBILE */
 @media(max-width:768px){
   .nav{display:none}
   .menu-btn{display:block}
-  section{padding:60px 6%}
-}
+  }

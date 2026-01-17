@@ -1,17 +1,23 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins,sans-serif;
+}
 
 body{
   background:#000;
   color:#fff;
   overflow-x:hidden;
-  position:relative;
 }
 
+/* HEADER */
 .header{
+  height:70px;
   display:flex;
-  justify-content:space-between;
   align-items:center;
-  padding:15px 30px;
+  justify-content:space-between;
+  padding:0 30px;
   border-bottom:1px solid #222;
   position:sticky;
   top:0;
@@ -19,7 +25,7 @@ body{
   z-index:1000;
 }
 
-.brand img{height:38px}
+.brand img{height:36px}
 
 .nav a{
   color:#d4af37;
@@ -27,27 +33,34 @@ body{
   text-decoration:none;
 }
 
+/* HERO */
 .hero{
-  height:100vh;
-  background:url("https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png") center/contain no-repeat;
+  height:calc(100vh - 70px);
+  background:url("https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png")
+  center/contain no-repeat;
 }
 
-section{padding:70px 20px;text-align:center}
+/* SECTION */
+section{
+  padding:70px 20px;
+  text-align:center;
+}
 
 .about-wrap{
   max-width:1100px;
   margin:auto;
   display:flex;
-  gap:50px;
   align-items:center;
+  gap:50px;
 }
 
 .about-face img{
   width:420px;
   border-radius:18px;
-  box-shadow:0 0 30px rgba(212,175,55,.4);
+  box-shadow:0 0 35px rgba(212,175,55,.4);
 }
 
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
@@ -62,19 +75,18 @@ section{padding:70px 20px;text-align:center}
   border-radius:14px;
 }
 
-.gallery img{
-  width:100%;
-  border-radius:14px;
-  border:1px solid #d4af37;
+/* CONTACT */
+.contact-section{
+  padding-bottom:30px;
 }
 
 .contact-section input,
 .contact-section textarea{
   width:100%;
   max-width:700px;
-  padding:14px;
   margin:10px auto;
   display:block;
+  padding:14px;
   background:#111;
   border:1px solid #d4af37;
   color:#fff;
@@ -83,22 +95,23 @@ section{padding:70px 20px;text-align:center}
 
 .contact-section button{
   padding:12px 40px;
-  background:#d4af37;
   border:none;
   border-radius:30px;
-  cursor:pointer;
+  background:#d4af37;
 }
 
+/* FOOTER */
 .footer{
-  text-align:center;
-  padding:40px;
+  padding:25px;
   border-top:1px solid #222;
+  text-align:center;
 }
 
+/* WHATSAPP */
 .whatsapp-float{
   position:fixed;
-  right:20px;
   bottom:20px;
+  right:20px;
   width:56px;
   height:56px;
   background:#25D366;
@@ -106,8 +119,8 @@ section{padding:70px 20px;text-align:center}
   display:flex;
   align-items:center;
   justify-content:center;
-  box-shadow:0 10px 25px rgba(37,211,102,.6);
   z-index:9999;
+  box-shadow:0 10px 25px rgba(37,211,102,.6);
 }
 
 .whatsapp-float img{
@@ -118,4 +131,4 @@ section{padding:70px 20px;text-align:center}
 @media(max-width:900px){
   .about-wrap{flex-direction:column}
   .nav{display:none}
-}
+  }

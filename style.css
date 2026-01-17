@@ -1,127 +1,170 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:#000;color:#fff}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins,sans-serif;
+}
+
+body{
+  background:#000;
+  color:#fff;
+}
 
 .header{
-  display:flex;justify-content:space-between;
-  align-items:center;padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
   border-bottom:1px solid #222;
 }
 
-.brand img{height:40px;margin-right:8px}
+.header img{
+  height:40px;
+}
 
 .nav a{
   color:#d4af37;
-  margin:0 12px;
+  margin:0 14px;
   text-decoration:none;
 }
 
-.menu-btn{display:none;font-size:26px;color:#d4af37}
-
-.hero-about img{width:100%;display:block}
-
-.hero-about{
-  position:relative;
-}
-
-.about-box{
+section{
+  padding:80px 8%;
   text-align:center;
-  padding:40px 20px;
 }
 
-h2{color:#d4af37;margin-bottom:20px}
+h2{
+  color:#d4af37;
+  margin-bottom:25px;
+}
 
-section{padding:60px 20px;text-align:center}
+/* ABOUT */
+.about-face{
+  display:flex;
+  align-items:center;
+  gap:60px;
+}
 
+.about-left img{
+  width:100%;
+  max-width:420px;
+  border-radius:20px;
+  box-shadow:0 0 40px rgba(212,175,55,.4);
+}
+
+.about-right{
+  text-align:left;
+}
+
+.about-right h3{
+  font-size:30px;
+  margin-bottom:15px;
+}
+
+.about-right p{
+  color:#ccc;
+  line-height:1.9;
+}
+
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+  gap:25px;
 }
 
 .gallery img{
   width:100%;
-  border-radius:12px;
+  border-radius:14px;
   border:1px solid #d4af37;
 }
 
+/* CARD */
 .card{
-  padding:30px;
+  padding:28px;
   border:1px solid #d4af37;
-  border-radius:12px;
+  border-radius:15px;
   transition:.3s;
 }
+
 .card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 0 20px rgba(212,175,55,.3);
+  transform:translateY(-8px);
+  box-shadow:0 0 25px rgba(212,175,55,.4);
 }
 
-.contact input,.contact textarea{
+/* CONTACT */
+.contact input,
+.contact textarea{
   width:100%;
-  padding:12px;
+  padding:14px;
   margin:10px 0;
   background:#111;
   border:1px solid #d4af37;
   color:#fff;
-  border-radius:8px;
+  border-radius:10px;
 }
 
 .contact button{
-  padding:12px 30px;
+  margin-top:15px;
+  padding:12px 40px;
   background:#d4af37;
   border:none;
-  border-radius:25px;
-  margin-top:10px;
+  border-radius:30px;
 }
 
-.end-banner img{width:100%;display:block}
+/* BIG BANNER */
+.big-banner img{
+  width:100%;
+  border-radius:10px;
+}
 
-footer{
+/* FOOTER */
+.footer{
   text-align:center;
-  padding:30px;
+  padding:35px;
   border-top:1px solid #222;
   color:#777;
 }
 
-.whatsapp{
+/* WHATSAPP */
+.whatsapp-float{
   position:fixed;
-  bottom:20px;
-  right:20px;
+  bottom:22px;
+  right:22px;
   width:60px;
   height:60px;
-  background:#25D366;
+  background:#25d366;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
-  z-index:9999;
-}
-.whatsapp img{width:32px;filter:invert(1)}
-
-.mobile-menu{
-  position:fixed;
-  top:0;
-  right:-100%;
-  width:100%;
-  height:100%;
-  background:#000;
-  padding:40px;
-  text-align:center;
-  transition:.4s;
   z-index:999;
-}
-.mobile-menu a{
-  display:block;
-  margin:20px 0;
-  color:#d4af37;
-  text-decoration:none;
-  font-size:22px;
-}
-.mobile-menu span{
-  font-size:30px;
-  cursor:pointer;
+  animation:pulse 1.5s infinite;
 }
 
+.whatsapp-float img{
+  width:32px;
+  filter:brightness(0) invert(1);
+}
+
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(37,211,102,.6);}
+  70%{box-shadow:0 0 0 20px rgba(37,211,102,0);}
+  100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
+}
+
+/* MOBILE */
 @media(max-width:768px){
-  .nav{display:none}
-  .menu-btn{display:block}
+  .about-face{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .about-right{
+    text-align:center;
+  }
+
+  .nav{
+    display:none;
+  }
 }

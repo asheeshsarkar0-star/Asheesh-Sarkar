@@ -2,7 +2,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:Poppins, sans-serif;
+  font-family:Poppins,sans-serif;
 }
 
 body{
@@ -12,76 +12,93 @@ body{
 }
 
 /* HEADER */
+
 .header{
+  position:sticky;
+  top:0;
+  background:#000;
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:12px 18px;
   border-bottom:1px solid #222;
-  background:#000;
-  position:sticky;
-  top:0;
   z-index:1000;
 }
 
-.brand img{ height:34px; }
+.brand img{height:34px;}
 
 .nav a{
   color:#d4af37;
-  margin-left:12px;
-  font-size:14px;
   text-decoration:none;
+  margin-left:14px;
+  font-size:14px;
 }
 
 /* HERO */
+
 .hero img{
   width:100%;
   display:block;
 }
 
-/* IMAGE SECTIONS */
-.about-image{
-  width:100%;
-  padding:0;
-  margin:0;
+/* SECTION GAP CONTROL */
+
+.section-tight{
+  padding:35px 16px;
 }
+
+section h2{
+  color:#d4af37;
+  text-align:center;
+  margin-bottom:18px;
+  font-size:20px;
+}
+
+/* ABOUT IMAGE */
 
 .about-image img{
   width:100%;
   display:block;
 }
 
-/* SECTIONS GAP (MOBILE PERFECT) */
-#media,
-#portfolio,
-#services,
-.contact-section{
-  padding:28px 16px;
-  text-align:center;
+/* MEDIA */
+
+.media-row{
+  display:flex;
+  gap:10px;
+  justify-content:center;
 }
 
-/* MEDIA */
 .media-row img{
   width:100%;
+  max-width:360px;
   border-radius:12px;
   border:1px solid #d4af37;
 }
 
 /* GRID */
+
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-  gap:16px;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
 }
 
 .card{
-  padding:16px;
+  padding:18px;
   border-radius:12px;
   border:1px solid rgba(212,175,55,.5);
-  background:#050505;
+  text-align:center;
+  font-size:14px;
 }
 
 /* CONTACT */
+
+.contact-section form{
+  max-width:420px;
+  margin:auto;
+}
+
 .contact-section input,
 .contact-section textarea{
   width:100%;
@@ -89,45 +106,50 @@ body{
   padding:12px;
   background:#0b0b0b;
   border:1px solid #d4af37;
+  border-radius:8px;
   color:#fff;
-  border-radius:10px;
 }
 
 .contact-section button{
-  padding:10px 40px;
+  width:100%;
+  margin-top:10px;
+  padding:12px;
   background:#d4af37;
   border:none;
   border-radius:30px;
-  margin-top:10px;
+  font-weight:600;
 }
 
 /* BOTTOM BANNER */
+
 .bottom-banner img{
   width:100%;
   display:block;
+  margin-top:25px;
 }
 
 /* FOOTER */
+
 .footer{
   text-align:center;
-  padding:22px 15px;
+  padding:25px 10px;
   border-top:1px solid #222;
   font-size:13px;
-  color:#aaa;
 }
 
 .footer-sub{
+  color:#aaa;
   margin-top:5px;
-  color:#777;
 }
 
 /* WHATSAPP */
+
 .whatsapp-float{
   position:fixed;
-  right:18px;
   bottom:18px;
-  width:54px;
-  height:54px;
+  right:18px;
+  width:55px;
+  height:55px;
   background:#25d366;
   border-radius:50%;
   display:flex;
@@ -138,4 +160,11 @@ body{
 
 .whatsapp-float img{
   width:28px;
+  filter:brightness(0) invert(1);
+}
+
+/* MOBILE NAV HIDE */
+
+@media(max-width:900px){
+  .nav{display:none;}
 }

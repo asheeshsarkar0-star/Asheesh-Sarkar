@@ -1,11 +1,8 @@
-:root{
-  --vh: 1vh;
-}
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:Poppins,sans-serif;
+  font-family:Poppins, sans-serif;
 }
 
 body{
@@ -16,122 +13,129 @@ body{
 
 /* HEADER */
 .header{
-  height:70px;
   display:flex;
-  align-items:center;
   justify-content:space-between;
-  padding:0 30px;
+  align-items:center;
+  padding:12px 18px;
   border-bottom:1px solid #222;
+  background:#000;
   position:sticky;
   top:0;
-  background:#000;
   z-index:1000;
 }
 
-.brand img{height:36px}
+.brand img{ height:34px; }
 
 .nav a{
   color:#d4af37;
-  margin:0 14px;
+  margin-left:12px;
+  font-size:14px;
   text-decoration:none;
 }
 
 /* HERO */
-.hero{
-  height: calc(var(--vh) * 100 - 70px);
-  background: url("https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png")
-  center / contain no-repeat;
+.hero img{
+  width:100%;
+  display:block;
 }
 
-/* SECTION */
-section{
-  padding:70px 20px;
+/* IMAGE SECTIONS */
+.about-image{
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+.about-image img{
+  width:100%;
+  display:block;
+}
+
+/* SECTIONS GAP (MOBILE PERFECT) */
+#media,
+#portfolio,
+#services,
+.contact-section{
+  padding:28px 16px;
   text-align:center;
 }
 
-.about-wrap{
-  max-width:1100px;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  gap:50px;
-}
-
-.about-face img{
-  width:420px;
-  border-radius:18px;
-  box-shadow:0 0 35px rgba(212,175,55,.4);
+/* MEDIA */
+.media-row img{
+  width:100%;
+  border-radius:12px;
+  border:1px solid #d4af37;
 }
 
 /* GRID */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:22px;
-  max-width:1100px;
-  margin:auto;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:16px;
 }
 
 .card{
-  padding:30px;
+  padding:16px;
+  border-radius:12px;
   border:1px solid rgba(212,175,55,.5);
-  border-radius:14px;
+  background:#050505;
 }
 
 /* CONTACT */
-.contact-section{
-  padding-bottom:30px;
-}
-
 .contact-section input,
 .contact-section textarea{
   width:100%;
-  max-width:700px;
-  margin:10px auto;
-  display:block;
-  padding:14px;
-  background:#111;
+  margin:10px 0;
+  padding:12px;
+  background:#0b0b0b;
   border:1px solid #d4af37;
   color:#fff;
   border-radius:10px;
 }
 
 .contact-section button{
-  padding:12px 40px;
+  padding:10px 40px;
+  background:#d4af37;
   border:none;
   border-radius:30px;
-  background:#d4af37;
+  margin-top:10px;
+}
+
+/* BOTTOM BANNER */
+.bottom-banner img{
+  width:100%;
+  display:block;
 }
 
 /* FOOTER */
 .footer{
-  padding:25px;
-  border-top:1px solid #222;
   text-align:center;
+  padding:22px 15px;
+  border-top:1px solid #222;
+  font-size:13px;
+  color:#aaa;
+}
+
+.footer-sub{
+  margin-top:5px;
+  color:#777;
 }
 
 /* WHATSAPP */
 .whatsapp-float{
   position:fixed;
-  bottom:20px;
-  right:20px;
-  width:56px;
-  height:56px;
-  background:#25D366;
+  right:18px;
+  bottom:18px;
+  width:54px;
+  height:54px;
+  background:#25d366;
   border-radius:50%;
   display:flex;
-  align-items:center;
   justify-content:center;
+  align-items:center;
   z-index:9999;
-  box-shadow:0 10px 25px rgba(37,211,102,.6);
 }
 
 .whatsapp-float img{
   width:28px;
-  height:28px;
 }
-
-@media(max-width:900px){
-  .about-wrap{flex-direction:column}
-  .nav{display:none}
-  }

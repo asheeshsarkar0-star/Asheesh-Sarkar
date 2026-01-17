@@ -14,8 +14,8 @@
 <!-- HEADER -->
 <header class="header">
   <div class="brand">
-    <img class="logo-icon" src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000007e747206a543b7d7d8770c41.png">
-    <img class="logo-text" src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_0000000028687209a6f6af3cd7170ed6.png">
+    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000007e747206a543b7d7d8770c41.png">
+    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_0000000028687209a6f6af3cd7170ed6.png">
   </div>
 
   <nav class="nav">
@@ -39,36 +39,31 @@
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
 
+<!-- TOP SMALL BANNER -->
+<section class="top-banner">
+  <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000004b3872098289629d0dc03285.png">
+</section>
+
+<!-- CENTER FLOW -->
+<div class="center-flow">
+
 <!-- ABOUT -->
 <section id="about" class="about">
   <h2>About Me</h2>
-
-  <div class="about-box">
-    <div class="about-text">
-      <h3>Asheesh Sarkar</h3>
-      <p>
-        I am a creative web designer & developer passionate about building
-        premium digital experiences.
-        This website is my personal space where I showcase my work, music,
-        media and creative journey.
-      </p>
-    </div>
-
-    <div class="about-image">
-      <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png">
-    </div>
-  </div>
+  <p>
+    I am a creative web designer & developer passionate about building
+    premium digital experiences. This website is my personal space
+    where I showcase my work, media and creative journey.
+  </p>
 </section>
 
 <!-- MEDIA -->
 <section id="media">
   <h2>Media Gallery</h2>
-
-  <div class="grid gallery">
-    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png" onclick="openImg(this.src)">
-    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000004b3872098289629d0dc03285.png" onclick="openImg(this.src)">
-    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000007e747206a543b7d7d8770c41.png" onclick="openImg(this.src)">
-    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_0000000028687209a6f6af3cd7170ed6.png" onclick="openImg(this.src)">
+  <div class="media-grid">
+    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png">
+    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000004b3872098289629d0dc03285.png">
+    <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000007e747206a543b7d7d8770c41.png">
   </div>
 </section>
 
@@ -97,7 +92,7 @@
 <section id="contact" class="contact">
   <h2>Contact Me</h2>
 
-  <form onsubmit="sendMessage(event)">
+  <form>
     <input type="text" placeholder="Your Name" required>
     <input type="email" placeholder="Your Email" required>
     <textarea placeholder="Your Message" required></textarea>
@@ -108,23 +103,28 @@
   <p>India</p>
 </section>
 
+</div>
+
+<!-- BIG BANNER LAST -->
+<section class="end-banner">
+  <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_00000000a5dc72068ccf64c818b36983.png">
+</section>
+
 <!-- FOOTER -->
 <footer class="footer">
   <img src="https://raw.githubusercontent.com/asheeshsarkar0-star/Asheesh-Sarkar/main/file_000000007e747206a543b7d7d8770c41.png">
   <p>© 2026 Asheesh Sarkar • All Rights Reserved</p>
 </footer>
 
-<!-- IMAGE VIEWER -->
-<div class="viewer" id="viewer" onclick="closeImg()">
-  <img id="viewerImg">
-</div>
-
 <!-- WHATSAPP -->
 <a href="https://wa.me/916395463738" target="_blank" class="whatsapp-float">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
 
-<script src="script.js"></script>
+<script>
+function openMenu(){document.getElementById("mobileMenu").style.right="0";}
+function closeMenu(){document.getElementById("mobileMenu").style.right="-100%";}
+</script>
 
 </body>
-  </html>
+</html>

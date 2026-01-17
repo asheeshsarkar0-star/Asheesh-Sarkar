@@ -234,3 +234,16 @@ h2{
   }
 
 }
+
+.big-banner{
+  margin-top:70px;
+  background:#000;
+}
+
+.big-banner img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-top:1px solid #222;
+  border-bottom:1px solid #222;
+}

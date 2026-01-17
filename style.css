@@ -80,7 +80,17 @@ body{
   line-height:1.8;
   max-width:520px;
 }
+.about-showcase{
+  width:100%;
+  margin:60px 0;
+}
 
+.about-showcase img{
+  width:100%;
+  display:block;
+  border-top:1px solid #222;
+  border-bottom:1px solid #222;
+}
 /* ================= SECTIONS ================= */
 
 section{
